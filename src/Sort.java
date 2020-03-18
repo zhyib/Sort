@@ -1,5 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -7,9 +5,10 @@ public class Sort {
     private final static int ARRAY_SIZE = 500000;
 
     public static void main(String[] args) {
-//        int[] array = {2, 1, 3, 6, 5, 4};
-        int[] array = generate();
-        int max = 6;
+        int[] array = {25, 11, 36, 61, 59, 45, 56, 12, 72, 75, 27, 64};
+//        int[] array = generate();
+//        int max = 6;
+        int maxDigit = 2;
 
 //        Bubble.sort(array);
 //        Insert.sort(array);
@@ -17,8 +16,10 @@ public class Sort {
 //        Merge.sort(array);
 //        Heap.sort(array);
 //        Count.sort(array, max);
-        Quick.sort(array);
-
+//        Quick.sort(array);
+//        Radix.sort(array, maxDigit);
+//        Bucket.sort(array, maxDigit);
+        Shell.sort(array);
         System.out.println(Arrays.toString(array));
     }
 
